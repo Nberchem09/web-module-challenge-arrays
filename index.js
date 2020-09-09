@@ -28,7 +28,8 @@ var originalFlavors = ["Banana Nut Fudge",
     "Rocky Road",
     "Strawberry",
     "Vanilla",
-    "Vanilla Burnt Almond"]
+    "Vanilla Burnt Almond"
+]
 
 /* Task 1: Confirm that the array is exactly 31 flavors. Your function should accept:
 
@@ -59,13 +60,13 @@ Your function should accept:
 Your function should add the flavor to the front of the array and console.log the resulting array.
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
+// let newFlavor = originalFlavors.unshift('Rainbow Sherbert')
 
-function addFlavor(/*code here*/){
-
-    /*code here*/
-
+function addFlavor(){
+    return (originalFlavors.unshift('Rainbow Sherbert')); 
 }
-
+addFlavor()
+console.log (originalFlavors)
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
