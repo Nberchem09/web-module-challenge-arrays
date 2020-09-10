@@ -62,11 +62,12 @@ Your function should add the flavor to the front of the array and console.log th
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 // let newFlavor = originalFlavors.unshift('Rainbow Sherbert')
 
-function addFlavor(){
+function addFlavor(originalFlavors){
     return (originalFlavors.unshift('Rainbow Sherbert')); 
 }
-addFlavor()
+addFlavor(originalFlavors)
 console.log (originalFlavors)
+console.log(is31Flavors(originalFlavors))
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
@@ -78,11 +79,10 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
-
-    /*code here*/
-
-}
+// function removeLastFlavor(originalFlavors){
+//     return (originalFlavors.pop());
+// }
+// console.log (originalFlavors)
 
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
